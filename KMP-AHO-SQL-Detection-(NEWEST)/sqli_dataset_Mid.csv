@@ -1,0 +1,100 @@
+' UNION SELECT 1 2 3 --,Medium,40
+'/**/UNION/**/SELECT/**/1/**/2/**/3/**/-- /* test */,Medium,40
+'/**/UNION/**/SELECT/**/1/**/2/**/3/**/--,Medium,40
+' UNION SELECT 1 2 3 --,Medium,40
+"' UNION SELECT username password FROM users --",Medium,40
+"' UNION SELECT username password FROM users --",Medium,40
+"' UNION SELECT username password FROM users --",Medium,40
+"' UNION SELECT username password FROM users -- /* test */",Medium,40
+admin' -- #,Medium,40
+admin' -- #,Medium,40
+admin'/**/--/**/#,Medium,40
+admin' -- # /* test */,Medium,40
+admin'/*,Medium,40
+admin'/*,Medium,40
+admin'/*,Medium,40
+admin'/*,Medium,40
+' OR EXISTS(SELECT * FROM users) --,Medium,40
+'/**/OR/**/EXISTS(SELECT/**/*/**/FROM/**/users)/**/--,Medium,40
+' OR EXISTS(SELECT * FROM users) --,Medium,40
+'/**/OR/**/EXISTS(SELECT/**/*/**/FROM/**/users)/**/--,Medium,40
+' OR 1=1; DROP TABLE users; --,Medium,40
+'/**/OR/**/1=1;/**/DROP/**/TABLE/**/users;/**/--,Medium,40
+' OR 1=1; DROP TABLE users; -- /* test */,Medium,40
+'/**/OR/**/1=1;/**/DROP/**/TABLE/**/users;/**/--,Medium,40
+' UNION SELECT 1 2 3 --,Medium,40
+' UNION SELECT 1 2 3 -- /* test */,Medium,40
+'/**/UNION/**/SELECT/**/1/**/2/**/3/**/--,Medium,40
+'/**/UNION/**/SELECT/**/1/**/2/**/3/**/--,Medium,40
+"' UNION SELECT username password FROM users --",Medium,40
+"' UNION SELECT username password FROM users --",Medium,40
+"' UNION SELECT username password FROM users --",Medium,40
+"'/**/UNION/**/SELECT/**/username /**/password/**/FROM/**/users/**/--",Medium,40
+admin' -- #,Medium,40
+admin'/**/--/**/#,Medium,40
+admin' -- # /* test */,Medium,40
+admin'/**/--/**/# /* test */,Medium,40
+admin'/*,Medium,40
+admin'/*,Medium,40
+admin'/* /* test */,Medium,40
+admin'/*,Medium,40
+' OR EXISTS(SELECT * FROM users) --,Medium,40
+'/**/OR/**/EXISTS(SELECT/**/*/**/FROM/**/users)/**/--,Medium,40
+' OR EXISTS(SELECT * FROM users) --,Medium,40
+' OR EXISTS(SELECT * FROM users) --,Medium,40
+' OR 1=1; DROP TABLE users; --,Medium,40
+'/**/OR/**/1=1;/**/DROP/**/TABLE/**/users;/**/--,Medium,40
+'/**/OR/**/1=1;/**/DROP/**/TABLE/**/users;/**/--,Medium,40
+'/**/OR/**/1=1;/**/DROP/**/TABLE/**/users;/**/--,Medium,40
+' UNION SELECT 1 2 3 --,Medium,40
+' UNION SELECT 1 2 3 --,Medium,40
+' UNION SELECT 1 2 3 -- /* test */,Medium,40
+'/**/UNION/**/SELECT/**/1/**/2/**/3/**/-- /* test */,Medium,40
+"' UNION SELECT username password FROM users --",Medium,40
+"' UNION SELECT username password FROM users --",Medium,40
+"' UNION SELECT username password FROM users -- /* test */",Medium,40
+"' UNION SELECT username password FROM users -- /* test */",Medium,40
+admin' -- #,Medium,40
+admin' -- #,Medium,40
+admin'/**/--/**/# /* test */,Medium,40
+admin' -- #,Medium,40
+admin'/*,Medium,40
+admin'/* /* test */,Medium,40
+admin'/* /* test */,Medium,40
+admin'/*,Medium,40
+' OR EXISTS(SELECT * FROM users) --,Medium,40
+'/**/OR/**/EXISTS(SELECT/**/*/**/FROM/**/users)/**/-- /* test */,Medium,40
+'/**/OR/**/EXISTS(SELECT/**/*/**/FROM/**/users)/**/--,Medium,40
+' OR EXISTS(SELECT * FROM users) --,Medium,40
+' OR 1=1; DROP TABLE users; --,Medium,40
+' OR 1=1; DROP TABLE users; -- /* test */,Medium,40
+' OR 1=1; DROP TABLE users; --,Medium,40
+'/**/OR/**/1=1;/**/DROP/**/TABLE/**/users;/**/--,Medium,40
+' UNION SELECT 1 2 3 --,Medium,40
+' UNION SELECT 1 2 3 --,Medium,40
+'/**/UNION/**/SELECT/**/1/**/2/**/3/**/--,Medium,40
+'/**/UNION/**/SELECT/**/1/**/2/**/3/**/--,Medium,40
+"' UNION SELECT username password FROM users --",Medium,40
+"'/**/UNION/**/SELECT/**/username /**/password/**/FROM/**/users/**/--",Medium,40
+"'/**/UNION/**/SELECT/**/username /**/password/**/FROM/**/users/**/--",Medium,40
+"'/**/UNION/**/SELECT/**/username /**/password/**/FROM/**/users/**/-- /* test */",Medium,40
+admin' -- #,Medium,40
+admin'/**/--/**/#,Medium,40
+admin' -- #,Medium,40
+admin' -- #,Medium,40
+admin'/*,Medium,40
+admin'/* /* test */,Medium,40
+admin'/* /* test */,Medium,40
+admin'/*,Medium,40
+' OR EXISTS(SELECT * FROM users) --,Medium,40
+'/**/OR/**/EXISTS(SELECT/**/*/**/FROM/**/users)/**/--,Medium,40
+' OR EXISTS(SELECT * FROM users) --,Medium,40
+' OR EXISTS(SELECT * FROM users) --,Medium,40
+' OR 1=1; DROP TABLE users; --,Medium,40
+' OR 1=1; DROP TABLE users; -- /* test */,Medium,40
+' OR 1=1; DROP TABLE users; --,Medium,40
+'/**/OR/**/1=1;/**/DROP/**/TABLE/**/users;/**/-- /* test */,Medium,40
+' UNION SELECT 1 2 3 --,Medium,40
+' UNION SELECT 1 2 3 --,Medium,40
+'/**/UNION/**/SELECT/**/1/**/2/**/3/**/-- /* test */,Medium,40
+'/**/UNION/**/SELECT/**/1/**/2/**/3/**/--,Medium,40

