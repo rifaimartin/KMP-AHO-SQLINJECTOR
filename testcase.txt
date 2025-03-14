@@ -40,32 +40,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt, orci
 Sed viverra quam eu metus bibendum, a suscipit mauris placerat. Donec fermentum erat vel urna convallis, eu pharetra elit scelerisque. Integer pharetra feugiat felis, ac luctus nunc tempor id. Suspendisse aliquet magna vitae turpis facilisis, in vestibulum urna tristique. Duis placerat nec felis id sollicitudin. Nulla aliquet, lorem et consequat volutpat, nunc velit posuere sapien, ac efficitur sapien dui at nisi. Vivamus viverra, dui nec convallis eleifend, libero est dictum felis, eget rhoncus orci enim ac erat.
 Curabitur auctor dolor ac elit venenatis, a scelerisque enim cursus. Etiam a eros eu erat feugiat euismod non id nunc. Integer mollis, mauris id volutpat viverra, sapien sapien convallis odio, eu scelerisque nisl elit et metus. Donec venenatis risus a nibh aliquet, id faucibus felis malesuada. Nunc ac metus gravida, tempor libero sit amet, luctus mi. In ultricies nunc et lorem lacinia, non suscipit urna malesuada. Nam consectetur leo sed turpis sodales, at convallis urna vestibulum. Etiam et dolor malesuada, consequat est nec, aliquet nisi.
 Donec tincidunt enim vitae turpis venenatis, eu faucibus leo ullamcorper. Morbi euismod purus et felis efficitur, sit amet laoreet leo mollis. Integer gravida turpis vel nulla suscipit, at placerat erat tincidunt. Sed vitae odio eget sapien vehicula iaculis. Nulla venenatis est vel nisi faucibus, id varius justo posuere. Ut feugiat augue id nunc faucibus, eget placerat est rhoncus. Phasellus venenatis nisi at vestibulum sollicitudin. Cras at dui ante. Proin sit amet lectus ut libero hendrerit malesuada.
-' OR 2+2=4;--  
-' OR 'foo' = 'foo'; --  
-admin' AND 1=1; #  
-' OR 'a'='a' UNION SELECT 1;--  
-' UNION SELECT null,@@version;--  
-' UNION ALL SELECT column_name FROM information_schema.columns; #  
-' UNION SELECT table_name,2 FROM information_schema.tables;--  
-'; DROP TABLE logs;--  
-'; EXEC xp_cmdshell('cmd.exe'); #  
-'; INSERT INTO users VALUES ('hacker', 'pwd');--  
-' AND 1=CONVERT(int, (SELECT @@version));--  
-' OR (SELECT 1/0 FROM users); #  
-' OR IF(1=1, SLEEP(5), 0);--  
-'; WAITFOR DELAY '0:0:10';--  
-'/**/OR/**/'1'='1  
-'%55NION SEL%45CT 1,2,3;--  
-'||(SELECT 0x4D7953514C);--  
-' CHR(97)||CHR(100)||CHR(109)||CHR(105)||CHR(110)  
-'||pg_sleep(5);--  
-'; EXEC sp_configure 'show advanced options', 1;--  
-Hello, please login.  
-Order ID: 12345  
-User email: test@example.com  
-SELECT product_name FROM products WHERE id = 100;  
-UPDATE orders SET status = 'shipped' WHERE id = 5;  
-INSERT INTO logs (event) VALUES ('user_logged_in');  
-user.name+123@domain.com  
-Price: $19.99 * 2 = $39.98  
-Terms & Conditions apply.

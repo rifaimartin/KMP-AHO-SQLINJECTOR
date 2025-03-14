@@ -28,7 +28,7 @@
     }
 
     int main(){
-        FILE *file = fopen("testscase.txt", "r");
+        FILE *file = fopen("testcase-10char.txt", "r");
         if (file == NULL) {
             printf("Error: Could not open file testscase.txt\n");
             return 1;
@@ -40,6 +40,11 @@
 
         vector<int> averageTime_KMP;
         vector<int> averageTime_AHO;
+
+        double count_kmp_attack = 0;
+        double count_kmp_non_attack = 0;
+        double count_aho_attack = 0;
+        double count_aho_non_attack = 0;
 
         while (fgets(line, sizeof(line), file)) {
             line[strcspn(line, "\n")] = '\0';
@@ -63,6 +68,10 @@
             averageTime_KMP.push_back(duration_kmp.count());
 
 
+            // printf("KMP Result: %s (Time: %a seconds)\n", 
+            //     result_kmp ? "Input is safe." : "Potential injection detected.", duration_kmp/1000000);
+
+
             // clock_t start_aho = clock();
 
             auto start_ahoo = high_resolution_clock::now();
@@ -75,9 +84,8 @@
             // double time_aho = (double)(end_aho - start_aho) / CLOCKS_PER_SEC;
 
             auto duration_aho = duration_cast<microseconds>(end_ahoo - start_ahoo);
+            averageTime_AHO.push_back(duration_aho.count());
 
-            // printf("KMP Result: %s (Time: %a seconds)\n", 
-            //     result_kmp ? "Input is safe." : "Potential injection detected.", duration_kmp/1000000);
 
             // cout << "KMP Results: " << (result_kmp ? "Input is safe." : "Potential injection detected.");
             // cout << " (Time: " << (duration_kmp/1000000) << " seconds" << endl; 
@@ -88,11 +96,40 @@
             // printf("-------------------------------------------------\n");
 
             
-            averageTime_AHO.push_back(duration_aho.count());
+            
+
+
+            if(result_kmp == false){
+                count_kmp_attack++;
+            }else{
+                count_kmp_non_attack++;
+            }
+
+            if(result_aho == false){
+                count_aho_attack++;
+            }else{
+                count_aho_non_attack++;
+            }
+
         }
 
+        
+
+        double accuracy_kmp_attack = (count_kmp_attack/70) * 70;
+        double accuracy_aho_attack = (count_aho_attack/70) * 70;
+        double accuracy_kmp_non_attack = (count_kmp_non_attack/30) * 30;
+        double accuracy_aho_non_attack = (count_aho_non_attack/30) * 30;
+
+        //Average Runtime
         auto avg_KMP = getAverage(averageTime_KMP);
-        auto avg_AHO = getAverage(averageTime_AHO);
+        auto avg_AHO = getAverage(averageTime_AHO);  
+
+        cout << "Total Potential Injection Detected for KMP = " << count_kmp_attack << endl;
+        cout << "Total Potential Injection Detected for AHO = " << count_aho_attack << endl;
+        cout << "Total Non-Potential Injection Detected for KMP = " << count_kmp_non_attack << endl;
+        cout << "Total Non-Potential Injection Detected for AHO = " << count_aho_non_attack << endl;
+        cout << "Accuracy for KMP = " << accuracy_kmp_attack + accuracy_kmp_non_attack << "%\n";
+        cout << "Accuracy for AHO = " << accuracy_aho_attack + accuracy_aho_non_attack << "%\n"; 
 
         cout << "Average time taken for Knuth Morris Pratt = " << avg_KMP/1000000 << " seconds" << endl;
         cout << "Average time taken for Aho-Corasick = " << avg_AHO/1000000 << " seconds" << endl;
