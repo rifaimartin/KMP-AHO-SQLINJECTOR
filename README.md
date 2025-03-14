@@ -41,7 +41,7 @@ Enter the input string when prompted to check for potential SQL injection patter
 
 ## Contributors
 
-Kelompok 1 Design & Analisis Algoritma
+Robertus Hudi, Rifai Martin, and Kennedy Suganto
 
 ## License
 
