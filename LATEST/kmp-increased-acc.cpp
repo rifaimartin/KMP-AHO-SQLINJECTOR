@@ -7,8 +7,10 @@
 #include <cctype>       // for ::tolower
 #include <unordered_map>
 #include <unordered_set>
+#include <chrono>       // for timing measurements
 
 using namespace std;
+using namespace std::chrono;
 
 // ------------------------
 // Normalization Function
@@ -91,6 +93,9 @@ string classifyRisk(int riskScore) {
 }
 
 int main() {
+    // Start overall timing
+    auto start_total = high_resolution_clock::now();
+    
     // ------------------------
     // Define Keyword Weights
     // ------------------------
@@ -142,6 +147,15 @@ int main() {
     string line;
     int totalQueries = 0;
     int correctCount = 0;
+    
+    // Pre-normalize all patterns (once outside the loop)
+    vector<string> normalized_patterns;
+    for (const string &pattern : sqli_patterns) {
+        normalized_patterns.push_back(normalize(pattern));
+    }
+
+    // Timing variables
+    double total_search_time = 0.0;
 
     // Process each line from the CSV file.
     // CSV format is assumed to be: query,expectedRisk,expectedScore
@@ -170,18 +184,28 @@ int main() {
         // Use an unordered_set to ensure each pattern is only counted once.
         int riskScore = 0;
         unordered_set<string> foundPatterns;
-        for (const string &pattern : sqli_patterns) {
-            // Normalize the pattern.
-            string normPattern = normalize(pattern);
+        
+        // Start timing for KMP search
+        auto start_search = high_resolution_clock::now();
+        
+        for (int i = 0; i < sqli_patterns.size(); i++) {
+            const string &pattern = sqli_patterns[i];
+            const string &normPattern = normalized_patterns[i];
+            
             // If the normalized pattern is found in the normalized query
             // and hasn't been counted yet, add its weight.
             if (KMPSearch(normQuery, normPattern)) {
-                if (foundPatterns.find(normPattern) == foundPatterns.end()) {
-                    foundPatterns.insert(normPattern);
-                    riskScore += keywordWeights[normPattern];
+                if (foundPatterns.find(pattern) == foundPatterns.end()) {
+                    foundPatterns.insert(pattern);
+                    riskScore += keywordWeights[pattern];
                 }
             }
         }
+        
+        // End timing for KMP search
+        auto end_search = high_resolution_clock::now();
+        auto search_duration = duration_cast<microseconds>(end_search - start_search).count();
+        total_search_time += search_duration;
 
         // Classify the risk based on the computed score.
         string computedRisk = classifyRisk(riskScore);
@@ -194,15 +218,21 @@ int main() {
         cout << "Query: " << query << endl;
         cout << "Score : " << riskScore << endl;
         cout << "Expected Risk: " << expectedRisk << " | Computed Risk: " << computedRisk << endl;
+        cout << "Search Time: " << search_duration << " μs" << endl;
         cout << (match ? "Match" : "Mismatch") << "\n--------------------------" << endl;
     }
 
     infile.close();
+    
+    // End overall timing
+    auto end_total = high_resolution_clock::now();
+    auto total_duration = duration_cast<milliseconds>(end_total - start_total).count();
 
     cout << "\nTotal Queries Processed: " << totalQueries << endl;
     cout << "Matching Classifications: " << correctCount << endl;
     double accuracy = (totalQueries > 0) ? (100.0 * correctCount / totalQueries) : 0.0;
     cout << "Accuracy: " << accuracy << "%" << endl;
+    cout << "Total Execution Time: " << total_duration << " ms" << endl;
 
     return 0;
 }
